@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMA Negeri 1 Purwakarta</title>
+  <meta name="description" content="Website profil resmi SMA Negeri 1 Purwakarta (SMANSA). Be Smart With Us.">
+  <link rel="icon" type="image/png" href="images/logo/logo-sekolah.png">
+
+  <!-- Font dari Google Fonts (butuh internet; jika offline, otomatis memakai font cadangan) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="lewati" href="#beranda">Lewati ke konten utama</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="wadah navbar-isi">
+      <a class="brand" href="#beranda" aria-label="SMA Negeri 1 Purwakarta, ke Beranda">
+        <img src="images/logo/logo-sekolah.png" alt="Logo SMA Negeri 1 Purwakarta" width="40" height="38">
+        <span class="brand-teks">
+          <strong>SMA Negeri 1 Purwakarta</strong>
+          <small>SMANSA</small>
+        </span>
+      </a>
+
+      <button class="menu-tombol" id="menuTombol" aria-expanded="false" aria-controls="menuNav" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menuNav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#profil">Profil Sekolah</a></li>
+          <li><a href="#visi-misi">Visi dan Misi</a></li>
+          <li><a href="#fasilitas">Fasilitas</a></li>
+          <li><a href="#ekstrakurikuler">Ekstrakurikuler</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li class="menu-ppdb"><a href="#spmb">SPMB</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. BERANDA / HERO ============ -->
+    <section class="hero" id="beranda">
+      <!-- Foto latar hero: ganti file ini untuk mengubah foto utama -->
+      <img class="hero-latar" src="images/gedung/gedung-lapangan.jpg" alt="" fetchpriority="high">
+      <div class="hero-lapisan"></div>
+
+      <div class="wadah hero-isi">
+        <div class="hero-teks">
+          <img class="hero-logo" src="images/logo/logo-sekolah.png" alt="Logo SMA Negeri 1 Purwakarta" width="84" height="80">
+          <h1>SMA Negeri 1 Purwakarta</h1>
+          <p class="slogan">Be Smart With Us</p>
+          <p class="sambutan">
+            Sekolah menengah atas negeri pertama di Kabupaten Purwakarta, berdiri sejak 1957.
+            Tempat siswa tumbuh menjadi pribadi yang religius, unggul dalam prestasi, terampil, dan berwawasan global.
+          </p>
+          <div class="hero-tombol">
+            <a class="tombol tombol-emas" href="#profil">Jelajahi Sekolah</a>
+            <a class="tombol tombol-garis" href="#galeri">Lihat Galeri</a>
+            <a class="tombol tombol-garis" href="#spmb">Info SPMB</a>
+          </div>
+        </div>
+
+        <figure class="hero-foto">
+          <img src="images/gedung/gedung-depan.jpg" alt="Gedung SMA Negeri 1 Purwakarta tampak depan" width="660" height="350">
+          <figcaption>Gedung SMA Negeri 1 Purwakarta</figcaption>
+        </figure>
+      </div>
+
+      <div class="wadah">
+        <dl class="hero-fakta">
+          <div><dt>Berdiri</dt><dd>17 Juli 1957</dd></div>
+          <div><dt>Ruang kelas</dt><dd>sekitar 35</dd></div>
+          <div><dt>Ruang laboratorium</dt><dd>sekitar 8</dd></div>
+          <div><dt>Ekstrakurikuler</dt><dd>8 kegiatan</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ 2. PROFIL SEKOLAH ============ -->
+    <section class="bagian" id="profil">
+      <div class="wadah">
+        <header class="bagian-kepala">
+          <h2>Profil Sekolah</h2>
+          <p>Identitas dan perjalanan SMA Negeri 1 Purwakarta sejak awal berdiri.</p>
+        </header>
+
+        <div class="profil-grid">
+          <div class="profil-kiri">
+            <!-- Foto profil sekolah -->
+            <figure class="profil-foto reveal">
+              <img src="images/gedung/gedung-lapangan.jpg" alt="Gedung dan lapangan SMA Negeri 1 Purwakarta" loading="lazy" decoding="async">
+              <figcaption>Gedung dan lapangan sekolah</figcaption>
+            </figure>
+
+            <!-- Identitas -->
+            <aside class="identitas reveal">
+              <h3>Identitas Sekolah</h3>
+              <dl>
+                <div><dt>Nama</dt><dd>SMA Negeri 1 Purwakarta</dd></div>
+                <div><dt>Singkatan</dt><dd>SMANSA</dd></div>
+                <div><dt>Slogan</dt><dd>Be Smart With Us</dd></div>
+                <div><dt>Status</dt><dd>Sekolah Menengah Atas Negeri</dd></div>
+              </dl>
+            </aside>
+          </div>
+
+          <!-- Sejarah: timeline. Ubah teks langsung di sini. -->
+          <div class="sejarah">
+            <h3>Sejarah Sekolah</h3>
+            <ol class="timeline">
+              <li class="reveal">
+                <time>Awal 1957</time>
+                <p>Purwakarta belum memiliki SMA Negeri. Pendidikan tingkat SMA hanya tersedia melalui sekolah swasta, yaitu SMA Sabha Siswa.</p>
+              </li>
+              <li class="reveal">
+                <time>Gagasan pendirian</time>
+                <p>Bapak Parjan mengusulkan berdirinya SMA Negeri dalam pertemuan POM SMA Sabha Siswa. Gagasan ini disampaikan melalui pemerintah daerah dengan bantuan Bapak R. Gunasah Natabrata, Wakil Bupati saat itu.</p>
+              </li>
+              <li class="reveal">
+                <time>Tahun ajaran 1957/1958</time>
+                <p>Usulan diteruskan ke Kantor PKK Bandung dan Kantor Inspeksi Pusat SMA Jakarta untuk direalisasikan pada tahun ajaran 1957/1958.</p>
+              </li>
+              <li class="reveal">
+                <time>17 Juli 1957</time>
+                <p>SMA Negeri Purwakarta resmi berdiri berdasarkan SK Nomor SL.0158/SK/III/1957.</p>
+              </li>
+              <li class="reveal">
+                <time>Awal berdiri</time>
+                <p>Sekolah dikenal sebagai SMA Negeri 25, sesuai urutan pendaftaran SMA Negeri di wilayah Jawa Barat. Kepala sekolah pertamanya adalah Bapak Toma Suriadireja, guru dari SMA Bandung.</p>
+                <ul class="jurusan">
+                  <li><b>Jurusan A</b> Bahasa</li>
+                  <li><b>Jurusan B</b> Ilmu Pasti/Alam</li>
+                  <li><b>Jurusan C</b> Sosial Ekonomi</li>
+                </ul>
+              </li>
+              <li class="reveal">
+                <time>Kini</time>
+                <p>Seiring perkembangan waktu, sekolah ini dikenal sebagai SMA Negeri 1 Purwakarta.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Guru dan tenaga kependidikan: ubah angkanya di sini -->
+        <div class="tenaga" id="tenaga">
+          <div class="tenaga-kartu reveal">
+            <div class="tenaga-angka">54</div>
+            <div class="tenaga-label"><strong>Guru</strong><span>Tenaga pendidik</span></div>
+          </div>
+          <div class="tenaga-kartu reveal">
+            <div class="tenaga-angka">20</div>
+            <div class="tenaga-label"><strong>Tenaga Kependidikan</strong><span>Staf dan tenaga pendukung</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. VISI DAN MISI ============ -->
+    <section class="bagian bagian-navy" id="visi-misi">
+      <div class="wadah">
+        <header class="bagian-kepala">
+          <h2>Visi dan Misi</h2>
+        </header>
+
+        <div class="visimisi-grid">
+          <div class="visi reveal">
+            <h3>Visi</h3>
+            <blockquote>
+              Mewujudkan insan yang religius, unggul dalam prestasi, terampil, dan berwawasan global.
+            </blockquote>
+          </div>
+
+          <div class="misi">
+            <h3>Misi</h3>
+            <ol>
+              <li class="reveal">Meningkatkan kualitas pendidikan yang berlandaskan nilai-nilai keagamaan dan budi pekerti luhur.</li>
+              <li class="reveal">Mendorong pencapaian prestasi akademik dan non-akademik secara optimal di tingkat lokal, nasional, hingga internasional.</li>
+              <li class="reveal">Mengembangkan keterampilan siswa melalui berbagai program intrakurikuler dan ekstrakurikuler guna menghadapi tantangan zaman.</li>
+              <li class="reveal">Membangun wawasan global pada seluruh warga sekolah dengan tetap mempertahankan nilai-nilai budaya bangsa.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. FASILITAS ============ -->
+    <section class="bagian" id="fasilitas">
+      <div class="wadah">
+        <header class="bagian-kepala">
+          <h2>Fasilitas Sekolah</h2>
+          <p>Ruang belajar yang mendukung kegiatan pembelajaran dan praktikum siswa. Klik kartu untuk melihat semua fotonya.</p>
+        </header>
+        <!-- Diisi otomatis dari script.js (KARTU_FASILITAS dan KOLEKSI) -->
+        <div class="kartu-grid kartu-grid-3" id="fasilitasDaftar"></div>
+      </div>
+    </section>
+
+    <!-- ============ 5. EKSTRAKURIKULER ============ -->
+    <section class="bagian bagian-mist" id="ekstrakurikuler">
+      <div class="wadah">
+        <header class="bagian-kepala">
+          <h2>Ekstrakurikuler</h2>
+          <p>Delapan kegiatan untuk mengembangkan minat, bakat, dan keterampilan siswa. Klik kartu untuk melihat galerinya.</p>
+        </header>
+        <!-- Diisi otomatis dari script.js (KARTU_EKSKUL dan KOLEKSI) -->
+        <div class="kartu-grid kartu-grid-4" id="ekskulDaftar"></div>
+      </div>
+    </section>
+
+    <!-- ============ SPMB (PPDB) ============ -->
+    <section class="bagian bagian-navy" id="spmb">
+      <div class="wadah">
+        <header class="bagian-kepala">
+          <h2>Informasi SPMB</h2>
+          <p>Sistem Penerimaan Murid Baru SMA Negeri 1 Purwakarta, sebelumnya dikenal sebagai PPDB.</p>
+        </header>
+
+        <!-- Ubah isi bagian ini langsung di index.html setiap tahun ajaran baru -->
+        <p class="spmb-pengantar reveal">
+          Sebagai salah satu sekolah yang ditetapkan sebagai Sekolah Maung (Manusia Unggul) oleh Pemerintah Provinsi Jawa Barat,
+          sistem seleksi di SMAN 1 Purwakarta berfokus sepenuhnya pada penjaringan potensi dan prestasi siswa tanpa menggunakan jalur zonasi.
+        </p>
+
+        <h3 class="spmb-judul">Jalur Penerimaan dan Kuota</h3>
+        <div class="jalur-grid">
+          <article class="jalur reveal">
+            <div class="jalur-kuota">70%<span>kuota</span></div>
+            <h4>Jalur Kompetensi Akademik</h4>
+            <p>Diperuntukkan bagi calon murid yang memiliki keunggulan di bidang akademik. Penilaian didasarkan pada akumulasi nilai rapor (semester 1 sampai 5), hasil Tes Kemampuan Akademik (TKA), serta sertifikat prestasi kejuaraan akademik (seperti OSN atau olimpiade sains lainnya).</p>
+          </article>
+          <article class="jalur reveal">
+            <div class="jalur-kuota">20%<span>kuota</span></div>
+            <h4>Jalur Kompetensi Non-Akademik</h4>
+            <p>Diperuntukkan bagi calon murid berprestasi di luar bidang akademik, meliputi kejuaraan bidang olahraga, seni, dan keagamaan, maupun jalur kepemimpinan (seperti pengalaman menjabat sebagai Ketua OSIS atau pemimpin Pramuka).</p>
+          </article>
+          <article class="jalur reveal">
+            <div class="jalur-kuota">10%<span>kuota</span></div>
+            <h4>Jalur Potensi Akademik / CIBI</h4>
+            <p>Jalur khusus bagi calon murid dengan kategori Cerdas Istimewa dan Bakat Istimewa (CIBI). Calon murid wajib melampirkan hasil tes IQ dari lembaga psikologi resmi dengan skor minimal 130, serta mengikuti pembobotan penilaian gabungan dari nilai rapor (40%) dan hasil TKA (60%).</p>
+          </article>
+        </div>
+
+        <div class="spmb-bawah">
+          <div class="spmb-kotak reveal">
+            <h3>Jadwal Pelaksanaan</h3>
+            <p class="spmb-ket">Pelaksanaan SPMB Sekolah Maung dilakukan dalam satu tahap secara serentak dan lebih awal dibandingkan SMA reguler.</p>
+            <dl class="jadwal">
+              <div>
+                <dt>Pendaftaran dan verifikasi berkas</dt>
+                <dd>25 sampai 29 Mei</dd>
+                <small>Menyesuaikan kalender akademik Dinas Pendidikan Jabar</small>
+              </div>
+              <div>
+                <dt>Pengumuman hasil seleksi</dt>
+                <dd>8 Juni</dd>
+              </div>
+            </dl>
+            <a class="tombol tombol-emas" href="https://maung.spmb.jabarprov.go.id" target="_blank" rel="noopener">Buka portal pendaftaran resmi</a>
+            <p class="spmb-portal">maung.spmb.jabarprov.go.id</p>
+          </div>
+
+          <div class="spmb-kotak reveal">
+            <h3>Ketentuan Penting</h3>
+            <ul class="ketentuan">
+              <li>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+                <div><strong>Tanpa jalur zonasi</strong><p>Seleksi murni berdasarkan kompetensi, potensi, dan prestasi calon murid.</p></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+                <div><strong>Bebas biaya (gratis)</strong><p>Seluruh rangkaian proses pendaftaran hingga seleksi SPMB di SMAN 1 Purwakarta tidak dipungut biaya apa pun.</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. GALERI ============ -->
+    <section class="bagian bagian-mist" id="galeri">
+      <div class="wadah">
+        <header class="bagian-kepala">
+          <h2>Galeri Sekolah</h2>
+          <p>Seluruh dokumentasi fasilitas, ekstrakurikuler, dan kegiatan sekolah. Klik foto untuk melihat lebih besar.</p>
+        </header>
+
+        <div class="filter" id="galeriFilter" role="group" aria-label="Filter kategori galeri"></div>
+        <div class="galeri-grid" id="galeriGrid"></div>
+        <div class="galeri-lainnya"><button type="button" class="tombol tombol-navy" id="galeriLainnya" hidden>Tampilkan lebih banyak</button></div>
+        <p class="galeri-kosong" id="galeriKosong" hidden></p>
+      </div>
+    </section>
+
+    <!-- ============ 8. KONTAK ============ -->
+    <section class="bagian" id="kontak">
+      <div class="wadah">
+        <header class="bagian-kepala">
+          <h2>Kontak</h2>
+          <p>Hubungi SMA Negeri 1 Purwakarta melalui kanal berikut.</p>
+        </header>
+
+        <div class="kontak-grid">
+          <!-- Ubah alamat, telepon, email, Instagram langsung di sini -->
+          <ul class="kontak-daftar">
+            <li class="kontak-baris">
+              <div class="kontak-ikon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+              <div class="kontak-teks"><small>Alamat</small><strong>Jl. Kolonel Kornel Singawinata No. 113, Nagrikidul, Kec. Purwakarta, Kabupaten Purwakarta, Jawa Barat 41111</strong></div>
+              <a class="kontak-aksi" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.%20Kolonel%20Kornel%20Singawinata%20No.%20113%2C%20Nagrikidul%2C%20Kec.%20Purwakarta%2C%20Kabupaten%20Purwakarta%2C%20Jawa%20Barat%2041111" target="_blank" rel="noopener">Buka Google Maps</a>
+            </li>
+            <li class="kontak-baris">
+              <div class="kontak-ikon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div>
+              <div class="kontak-teks"><small>Nomor telepon</small><strong>(0264) 200025 / (0264) 200263</strong></div>
+              <a class="kontak-aksi" href="tel:0264200025">Telepon</a>
+            </li>
+            <li class="kontak-baris">
+              <div class="kontak-ikon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+              <div class="kontak-teks"><small>Email sekolah</small><strong>sman1purwakarta@gmail.com</strong></div>
+              <a class="kontak-aksi" href="mailto:sman1purwakarta@gmail.com">Kirim email</a>
+            </li>
+            <li class="kontak-baris">
+              <div class="kontak-ikon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+              <div class="kontak-teks"><small>Instagram resmi</small><strong>@official_sman1purwakarta</strong></div>
+              <a class="kontak-aksi" href="https://www.instagram.com/official_sman1purwakarta" target="_blank" rel="noopener">Buka Instagram</a>
+            </li>
+          </ul>
+
+          <!-- Peta: dibuat otomatis dari alamat. Ganti isi src jika punya link embed resmi. -->
+          <div class="peta">
+            <iframe src="https://www.google.com/maps?q=Jl.%20Kolonel%20Kornel%20Singawinata%20No.%20113%2C%20Nagrikidul%2C%20Kec.%20Purwakarta%2C%20Kabupaten%20Purwakarta%2C%20Jawa%20Barat%2041111&amp;output=embed" title="Lokasi SMA Negeri 1 Purwakarta di Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wadah footer-isi">
+      <div class="footer-brand">
+        <img src="images/logo/logo-sekolah.png" alt="" width="44" height="42">
+        <div>
+          <strong>SMA Negeri 1 Purwakarta</strong>
+          <span>Be Smart With Us</span>
+        </div>
+      </div>
+      <p><a class="footer-ppdb" href="#spmb">Informasi SPMB</a></p>
+      <p>&copy; <span id="tahun">2026</span> SMA Negeri 1 Purwakarta (SMANSA)</p>
+    </div>
+  </footer>
+
+  <!-- Tombol kembali ke atas -->
+  <button class="ke-atas" id="keAtas" aria-label="Kembali ke atas" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- Lightbox: foto diperbesar -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto galeri" hidden>
+    <button class="lb-tutup" id="lbTutup" aria-label="Tutup">&times;</button>
+    <button class="lb-nav lb-sebelumnya" id="lbSebelumnya" aria-label="Foto sebelumnya">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lb-figur">
+      <img id="lbGambar" alt="">
+      <figcaption>
+        <strong id="lbNama"></strong>
+        <span id="lbInfo"></span>
+      </figcaption>
+      <div class="lb-thumbs" id="lbThumbs" hidden></div>
+    </figure>
+    <button class="lb-nav lb-berikutnya" id="lbBerikutnya" aria-label="Foto berikutnya">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
